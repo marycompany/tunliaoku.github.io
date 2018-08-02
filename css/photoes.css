@@ -1,0 +1,114 @@
+  <style>
+        	*{margin: 0;padding: 0;}
+        	/*body{
+        		background:pink; 
+        	}*/
+        /*div{
+        	width: 950px;
+            height: 500px;
+            margin: 0 auto;
+            background: pink; 
+            position: relative;
+            
+        }*/
+        div h2{
+        	text-align: center;
+        	font-size: 50px;
+        	font-family: '微软雅黑';
+        	font-weight: 300;
+   	
+
+        }
+
+      div img{
+      	   border: 1px solid #ccc;
+      	   padding: 10px;
+      	   background-color:#fff; 
+      	   position: absolute;
+      	   top: 0px;
+      	   left: 0px;
+      	   cursor: pointer;
+      	   transition: 2s;
+      	   /*transition 过渡作用*/
+      }
+         /*定位：相对定位。固定定位。绝对定位*/
+      div img:nth-of-type(1){
+      	left:-120px;
+      	top: 150px;
+     transform: rotate(15deg);
+     z-index: 2;
+      }
+  div img:nth-of-type(2){
+      	left: 0px;
+      	top: 60px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+       div img:nth-of-type(3){
+      	left: 130px;
+      	top: 80px;
+      	transform: rotate(10deg);
+      	z-index: 2;
+      }
+         div img:nth-of-type(4){
+      	left: 280px;
+      	top: 60px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+  div img:nth-of-type(5){
+      	left: 420px;
+      	top: 70px;
+      	transform: rotate(1deg);
+      	z-index: 2;
+      }
+       div img:nth-of-type(6){
+      	left: 520px;
+      	top: 80px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+         div img:nth-of-type(7){
+      	left: 630px;
+      	top: 90px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+  div img:nth-of-type(8){
+      	left: 740px;
+      	top: 80px;
+      	transform: rotate(15deg);
+      	z-index: 2;
+      }
+     div img:nth-of-type(9){
+      	left: 850px;
+      	top: 160px;
+      	transform: rotate(-50deg);
+      	z-index: 2;
+      }
+       div img:hover{
+         transform: scale(5.5,2) rotate(360deg) ; /* hover伪类，当鼠标移动时发生变化 .1.宽  2.高  当n大于1，放大，否则缩小 */
+         z-index: 20;
+         box-shadow: 10px 10px 15px rgba(0, 0, 0, 1)/*投影：左右，上下，清晰度。 rgba(0, 0, 0, 1.0)分别代表红R，绿G，蓝B，透明度*/
+        }
+       img.music{
+       	position:fixed ;
+       	right: 20px;
+       	top: 20px;
+       /*	animation: play 5s linear infinite;*/
+       }
+       .no{
+     	 	animation: play 5s linear infinite;
+     }
+         @keyframes play{
+               0%{
+               	transform: rotate(0deg);
+
+               }
+               100%{
+               	transform: rotate(360deg);
+               }
+           /*旋转角度*/
+         } 
+     
+        </style>

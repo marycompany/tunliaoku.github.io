@@ -1,0 +1,272 @@
+  <style>
+        	*{margin: 0;padding: 0;}
+        	/*body{
+        		background:pink; 
+        	}*/
+        .test{
+        	
+            margin: 0 auto;
+            /*background: pink;*/ 
+            position: relative;
+            padding:100px,0px;
+        }
+        .h2{
+        	text-align: center;
+        	font-size: 50px;
+        	font-family: '微软雅黑';
+        	font-weight: 300;
+   	
+
+        }
+
+      .test img{
+      	   border: 2px solid #ccc;
+      	   padding: 10px;
+      	   background-color:#fff; 
+      	   /*position: absolute;*/
+      	   top: 0px;
+      	   left: 0px;
+      	   cursor: pointer;
+      	   transition: 2s;
+      	   /*transition 过渡作用*/
+      }
+         /*定位：相对定位。固定定位。绝对定位*/
+      .test img:nth-of-type(1){
+      	left:100px;
+      	top: 200px;
+     transform: rotate(15deg);
+     z-index: 2;
+      }
+  .test img:nth-of-type(2){
+      	left: 250px;
+      	top: 200px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+      .test img:nth-of-type(3){
+      	left: 400px;
+      	top: 200px;
+      	transform: rotate(10deg);
+      	z-index: 2;
+      }
+        .test img:nth-of-type(4){
+      	left: 600px;
+      	top: 200px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+  .test img:nth-of-type(5){
+      	left: 800px;
+      	top: 200px;
+      	transform: rotate(1deg);
+      	z-index: 2;
+      }
+       .test img:nth-of-type(6){
+      	left: 950px;
+      	top: 200px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+         .test img:nth-of-type(7){
+      	left:1140px;
+      	top: 200px;
+      	transform: rotate(-15deg);
+      	z-index: 4;
+      }
+  .test img:nth-of-type(8){
+      	left:1300px;
+      	top: 200px;
+      	transform: rotate(15deg);
+      	z-index: 2;
+      }
+     .test img:nth-of-type(9){
+      	left: 1300px;
+      	top: 500px;
+      	transform: rotate(-50deg);
+      	z-index: 2;
+      }
+      
+      /*大氧吧详情组*/
+      .test img:nth-of-type(10){
+      	left:250px;
+      	top: 500px;
+     transform: rotate(-15deg);
+     z-index: -2;
+      }
+  .test img:nth-of-type(11){
+      	left: 1450px;
+      	top: 500px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+      .test img:nth-of-type(12){
+      	left: 400px;
+      	top: 500px;
+      	transform: rotate(10deg);
+      	z-index: 2;
+      }
+        .test img:nth-of-type(13){
+      	left: 600px;
+      	top: 500px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+  .test img:nth-of-type(14){
+      	left: 800px;
+      	top:500px;
+      	transform: rotate(1deg);
+      	z-index: 2;
+      }
+       .test img:nth-of-type(15){
+      	left: 950px;
+      	top: 500px;
+      	transform: rotate(-15deg);
+      	z-index: 2;
+      }
+         .test img:nth-of-type(16){
+      	left:1140px;
+      	top: 500px;
+      	transform: rotate(-15deg);
+      	z-index: 4;
+      }
+  .test img:nth-of-type(17){
+      	left:1200px;
+      	top: 500px;
+      	transform: rotate(15deg);
+      	z-index: 2;
+      }
+     .test img:nth-of-type(18){
+      	left: 1400px;
+      	top: 500px;
+      	transform: rotate(-50deg);
+      	z-index: 2;
+      }
+     
+     
+     
+       .test img:hover{
+         transform: scale(5,5) rotate(360deg) ; /* hover伪类，当鼠标移动时发生变化 .1.宽  2.高  当n大于1，放大，否则缩小 */
+         z-index: 20;
+         box-shadow: 10px 10px 15px rgba(0, 0, 0, 1)/*投影：左右，上下，清晰度。 rgba(0, 0, 0, 1.0)分别代表红R，绿G，蓝B，透明度*/
+        }
+       img.music{
+       	position:fixed ;
+       	right: 20px;
+       	top: 20px;
+       /*	animation: play 5s linear infinite;*/
+       }
+       .no{
+     	 	animation: play 5s linear infinite;
+     }
+         @keyframes play{
+               0%{
+               	transform: rotate(0deg);
+
+               }
+               100%{
+               	transform: rotate(360deg);
+               }
+           /*旋转角度*/
+         } 
+     
+        .chan{
+        	font-size: 60px;
+        	font-family: "微软雅黑";
+        }
+     
+     
+     
+     
+     
+     /*底部栏*/
+    .spice-footer{
+    	background-color: greenyellow;
+    }
+    .dibu{
+    	font-size: 15px;
+    	font-family: "微软雅黑";
+    	padding: 15px 0px 15px 0px;color:#000000;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .polaroids{}
+			.polaroids li{display: inline;}
+			.polaroids a{background: #fff;display: inline;
+			float:left;margin:0 0 0px 30px;width:auto;
+			padding:80px 10px 15px;
+			text-align: center;font-family: "Marker Felt", sans-serif;text-decoration: none;
+			color:#333;font-size: 18px;
+			-webkit-box-shadow:0 3px 6px rgba(0,0,0,.25);
+			-moz-box-shadow:0 3px 6px rgba(0,0,0,.25);
+			-o-box-shadow:0 3px 6px rgba(0,0,0,.25);
+			box-shadow:0 3px 6px rgba(0,0,0,.25);
+			}
+			.polaroids img{display: block;width:190px;margin-bottom:12px;}
+			.polaroids a:after{content: attr(title);/* Ie8+,FF,Chorme,Safari */}
+			.polaroids li:nth-child(even) a{
+				-webkit-transform:rotate(3deg);
+				-moz-transform:rotate(3deg);
+				-ms-transform:rotate(3deg);
+				transform:rotate(3deg);
+			}
+			.polaroids li:nth-child(3n) a{
+				-webkit-transform:none;
+				-moz-transform:none;
+				-ms-transform:rotate(2deg);
+				transform:none;
+				position: relative;
+				top:-5px;
+			}
+			.polaroids li:nth-child(5n) a{
+				-webkit-transform:rotate(3deg);
+				-moz-transform:rotate(3deg);
+				-ms-transform:rotate(3deg);
+				transform:rotate(3deg);
+				position: relative;
+				right:5px;
+			}
+			.polaroids li:nth-child(8n) a{
+				position: relative;
+				top:8px;
+				right:5px;
+			}
+			.polaroids li:nth-child(11n) a{
+				position: relative;
+				top:3px;
+				right:-5px;
+			}
+			.polaroids li a:hover{
+				-webkit-transform:scale(3);
+				-moz-transform:scale(3);
+				-ms-transform:scale(3);
+				transform:scale(3);
+				-webkit-box-shadow:0 3px 6px rgba(0,0,0,.5);
+				-moz-box-shadow:0 3px 6px rgba(0,0,0,.5);
+				-o-box-shadow:0 3px 6px rgba(0,0,0,.5);
+				box-shadow:0 3px 6px rgba(0,0,0,.5);
+				position: relative;
+				z-index: 5;
+			}
+			.polaroids li.messy a{margin-top:-375px;margin-left:160px;
+				-webkit-transform:rotate(-5deg);
+				-moz-transform:rotate(-5deg);
+				-ms-transform:rotate(-5deg);
+				transform:rotate(-5deg);
+			}
+			
+			/*mqajiaxian*/
+		
+        </style>

@@ -1,0 +1,94 @@
+#carousel {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    position: relative;
+    top: 300px;
+    width: 1200px;
+}
+
+#container {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-origin: center bottom 0;
+    transform-origin: center bottom 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 200px;
+    z-index: 1000;
+}
+
+item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    -webkit-transform: translateZ(400px);
+    -ms-transform: translateZ(400px);
+    -o-transform: translateZ(400px);
+    transform: translateZ(400px);
+    position: absolute;
+}
+item img {
+    width: 100%;
+     border: 2px solid #ccc;
+      	   padding: 10px;
+      	   background-color:#fff; 
+      	   /*position: absolute;*/
+      	   top: 0px;
+      	   left: 0px;
+      	   cursor: pointer;
+      	   transition: 0.1s;
+      	   /*transition 过渡作用*/
+    
+    
+    
+    
+}
+
+item img:hover{
+         transform: scale(2,2) rotate(0deg) ; /* hover伪类，当鼠标移动时发生变化 .1.宽  2.高  当n大于1，放大，否则缩小 */
+         z-index: 20;
+         box-shadow: 10px 10px 15px rgba(0, 0, 0, 1)/*投影：左右，上下，清晰度。 rgba(0, 0, 0, 1.0)分别代表红R，绿G，蓝B，透明度*/
+        }
+
+.tc-btn-container {
+  display: block;
+  float: left;
+  height: 35px;
+  margin-top: -12.5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.tc-next {
+    background-color: #333;
+    color: white;
+    display: block;
+    float: right;
+    font-size: 12px;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+.tc-prev {
+    background-color: #333;
+    color: white;
+    display: block;
+    float: left;
+    font-size: 12px;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+}
